@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trade - Stock & Crypto Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+      <div id="userInfo"></div>
+      <button id="menuBtn">Menu</button>
+  </header>
+  <nav id="menu" class="hidden">
+      <ul>
+          <li><a href="/game">Home</a></li>
+          <li><a href="/settings">Settings</a></li>
+          <li><a href="/tickets">Tickets</a></li>
+          <li><a href="/logout">Logout</a></li>
+      </ul>
+  </nav>
+  <main>
+      <h2>Trade Assets</h2>
+      <div>
+          <label for="recipient">Select Player:</label>
+          <select id="recipient"></select>
+      </div>
+      <div>
+          <label for="assetType">Asset Type:</label>
+          <select id="assetType">
+              <option value="stock">Stock</option>
+              <option value="crypto">Crypto</option>
+          </select>
+      </div>
+      <div>
+          <label for="symbol">Symbol:</label>
+          <input type="text" id="symbol">
+      </div>
+      <div>
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount">
+      </div>
+      <div>
+          <label for="price">Price per unit:</label>
+          <input type="number" id="price" step="0.01">
+      </div>
+      <button id="tradeBtn">Submit Trade</button>
+      <div id="tradeStatus"></div>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>

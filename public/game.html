@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game - Stock & Crypto Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Chart.js for graph rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <header>
+      <div id="userInfo"></div>
+      <button id="menuBtn">Menu</button>
+  </header>
+  <nav id="menu" class="hidden">
+      <ul>
+          <li><a href="/settings">Settings</a></li>
+          <li><a href="/trade">Trade</a></li>
+          <li><a href="/tickets">Tickets</a></li>
+          <li><a href="/logout">Logout</a></li>
+      </ul>
+  </nav>
+  <main>
+      <section id="stocksSection">
+          <h2>Stocks</h2>
+          <div id="stocksList"></div>
+      </section>
+      <section id="cryptosSection">
+          <h2>Cryptocurrencies</h2>
+          <div id="cryptosList"></div>
+      </section>
+      <section id="chartsSection">
+          <h2>Chart Preview</h2>
+          <canvas id="previewChart" width="300" height="150"></canvas>
+      </section>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>

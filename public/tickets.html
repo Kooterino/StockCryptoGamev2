@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tickets - Stock & Crypto Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+      <div id="userInfo"></div>
+      <button id="menuBtn">Menu</button>
+  </header>
+  <nav id="menu" class="hidden">
+      <ul>
+          <li><a href="/game">Home</a></li>
+          <li><a href="/settings">Settings</a></li>
+          <li><a href="/trade">Trade</a></li>
+          <li><a href="/logout">Logout</a></li>
+      </ul>
+  </nav>
+  <main>
+      <h2>Your Tickets</h2>
+      <div id="ticketsList"></div>
+      <h3>Submit a new ticket</h3>
+      <textarea id="ticketMessage" placeholder="Describe your issue"></textarea>
+      <button id="submitTicketBtn">Submit Ticket</button>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>

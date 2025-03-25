@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings - Stock & Crypto Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+      <div id="userInfo"></div>
+      <button id="menuBtn">Menu</button>
+  </header>
+  <nav id="menu" class="hidden">
+      <ul>
+          <li><a href="/game">Home</a></li>
+          <li><a href="/trade">Trade</a></li>
+          <li><a href="/tickets">Tickets</a></li>
+          <li><a href="/logout">Logout</a></li>
+      </ul>
+  </nav>
+  <main>
+      <h2>Settings</h2>
+      <div>
+          <label for="themeToggle">Theme:</label>
+          <select id="themeToggle">
+              <option value="light">Light Mode</option>
+              <option value="dark">Dark Mode</option>
+          </select>
+      </div>
+      <div>
+          <label for="volume">Volume:</label>
+          <input type="range" id="volume" min="0" max="100" value="50">
+      </div>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>
